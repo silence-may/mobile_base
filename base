@@ -1,0 +1,67 @@
+@charset "utf-8";
+html, body {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+body{font-size:.24rem;-webkit-font-smoothing：antialiased}
+ div, ul, li, a, img, h3, p,header,h1, input,button,section,span,i,video,footer,aside,dl,dt,dd,select,option{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
+
+}
+ul,li{list-style:none;}
+img{width:100%; height:auto; pointer-events: none; font-size:0;vertical-align: middle;}
+a,button,input,optgroup,select,textarea {
+    -webkit-tap-highlight-color:rgba(0,0,0,0); /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+    -webkit-appearance:none;/*去除浏览器默认样式，解决单选复选框无法改变宽高的问题*/
+    -moz-appearance:none;
+
+}
+a, img {
+    -webkit-touch-callout: none; /*禁止长按链接与图片弹出菜单*/
+}
+a{ text-decoration: none;}
+form,input,button,select,textarea{outline:none;border:0 none; padding:0; background-color:transparent; list-style-type:none;}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.all{width:100%; height:100%; margin:0 auto;}
+.hidden{visibility: hidden;}
+.pa{position:absolute;}
+.pr{position:relative;}
+.half{left:50%; top:50%;transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);}
+.half-left{top:0;left:50%;transform: translate(-50%,0);-o-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-moz-transform: translate(-50%,0);-webkit-transform: translate(-50%,0);}
+.half-top{
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.tl{text-align: left;}
+.tc{text-align: right;}
+.tr{text-align: center;}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearbox{ width:100%;height:0; overflow: hidden;font-size:0; clear:both;}
+.clear:after{content:""; width:100%;height:0; overflow: hidden;font-size:0; display:block; clear:both;}
+.clearMargin:before{
+    content:"";
+    display: table;
+}
